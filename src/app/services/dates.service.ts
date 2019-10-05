@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class DatesService {
-    getEvents() {
-        return eventsElemets
+    getDates() {
+        return datesElemets
     }
 
-    getEvent(id:number){
-      return eventsElemets.find(event=> event.idDate === id)
+    getDate(id:number){
+      return datesElemets.find(event=> event.idDate === id)
     }
 }
-const eventsElemets = [
+const datesElemets = [
     {
       idDate: 1,
       firstName: "Pablo",
@@ -18,6 +18,15 @@ const eventsElemets = [
       userId: 1070015,
       Appoint: '07/05/2014',
       doctorId: 10351
-    }
+    },
+    {
+      idDate: 2,
+      firstName: "David",
+      lastName: "Castrp",
+      userId: 1070015,
+      Appoint: '06/04/2014',
+      doctorId: 10351
+    },
+
   ]
 

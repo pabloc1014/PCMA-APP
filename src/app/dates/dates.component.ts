@@ -12,7 +12,7 @@ export class DatesComponent implements OnInit{
   constructor(private dateService: DatesService){   
   }
   ngOnInit() {
-    this.dates = this.dateService.getEvents()
+    this.dates = this.dateService.getDates()
   }
     test: string ="Angular Test"
     

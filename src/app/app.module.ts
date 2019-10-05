@@ -8,13 +8,15 @@ import { appRoutes } from './routes';
 import { DatesComponent } from './dates/dates.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { DatesService } from './services/dates.service';
+import { LoginComponent } from './user/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     DatesComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
