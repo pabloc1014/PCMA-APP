@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { DatesComponent } from './dates/dates.component';
 import { NavBarComponent } from './navbar/navbar.component';
+import { DatesService } from './services/dates.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { NavBarComponent } from './navbar/navbar.component';
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    DatesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
