@@ -1,7 +1,9 @@
 export interface IDate {
-    id: number
+    idDate: number
     firstName: string
     lastName: string
-    userName: string
+    userId: number
+    Appoint: Date
+    doctorId: number
     
 }
